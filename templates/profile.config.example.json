@@ -1,0 +1,55 @@
+{
+  "$schema": "Candidate Profile Configuration for Generic BOSS Auto Apply",
+  "candidate": {
+    "name": "候选人姓名（如：张三）",
+    "degree": "bachelor",
+    "degreeLevelText": "统招本科",
+    "gradYear": 2026,
+    "currentStatus": "在读或应届（如：在校生/应届生/离职）",
+    "schoolType": "综合类普通高校",
+    "targetRoleType": "intern",
+    "cityCode": "100010000",
+    "cityName": "全国或意向城市（如：北京/上海/深圳/杭州/广州/成都等）",
+    "allowRemote": true
+  },
+  "matchingRules": {
+    "targetTechKeywords": [
+      "软件研发",
+      "后端开发",
+      "前端开发",
+      "全栈开发",
+      "Python",
+      "Java",
+      "Golang",
+      "AI应用开发"
+    ],
+    "mustHaveDevKeywords": [
+      "开发",
+      "研发",
+      "工程",
+      "技术",
+      "软件",
+      "实习生"
+    ],
+    "excludeTitleRegex": "(销售|商务|运营|客服|人事|行政|管培生|课程顾问|电话销售|数据标注|文员|短视频|内容审核)",
+    "excludeDegreeRegex": "(硕士及以上|研究生及以上|博士研究生|仅限硕士|硕士优先|研究生优先|博士优先|985/211优先|双一流高校优先)",
+    "blacklistCompanies": [
+      "示例需要避开的某某公司A",
+      "示例不考虑的外包公司B"
+    ],
+    "maxRecruiterInactiveDays": 3,
+    "ignoreCompanyScale": true
+  },
+  "searchTasks": [
+    { "kw": "后端开发 实习", "maxPages": 2 },
+    { "kw": "Python开发 实习", "maxPages": 2 },
+    { "kw": "全栈开发 实习", "maxPages": 2 }
+  ],
+  "execution": {
+    "port": 9223,
+    "dailyQuota": 150,
+    "batchTargetCount": 10,
+    "statePath": "state.json",
+    "outputPath": "approved_jobs.json"
+  }
+}
