@@ -39,8 +39,6 @@
 帮我安装这个skill 
 ```
 
-
-
 你可以将本仓库直接克隆到任何支持 Agent Skill 的智能体目录中：
 
 ```powershell
