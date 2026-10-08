@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Agent Skill](https://img.shields.io/badge/Type-Agent%20Skill-8A2BE2.svg?style=flat-square&logo=openai)](https://github.com/)
+[![Agent Skill](https://img.shields.io/badge/Type-Agent%20Skill-8A2BE2.svg?style=flat-square&logo=openai)](https://github.com/Azusa010/boss-auto-apply)
 [![Compatible Agents](https://img.shields.io/badge/Compatible-Antigravity%20%7C%20Claude%20%7C%20Cursor%20%7C%20Windsurf-success.svg?style=flat-square)]()
 [![Chrome CDP Native](https://img.shields.io/badge/Chrome-CDP%20Native-orange.svg?style=flat-square&logo=google-chrome)](https://chromedevtools.github.io/devtools-protocol/)
 [![Zero External Dependencies](https://img.shields.io/badge/Dependencies-Zero%20(Node)-brightgreen.svg?style=flat-square)]()
@@ -33,20 +33,16 @@
 
 ### 第一步：将本 Skill 装入你的 Agent
 
-让Agent安装
+**方法 A：直接对 Agent 发送安装指令**
+> `帮我安装这个 skill: https://github.com/Azusa010/boss-auto-apply`
 
-```
-帮我安装这个skill 
-```
-
-你可以将本仓库直接克隆到任何支持 Agent Skill 的智能体目录中：
-
+**方法 B：克隆到对应 Agent 技能目录**
 ```powershell
 # 针对当前项目（Project-level Skill）
-git clone https://github.com/<你的用户名>/boss-auto-apply.git .agents/skills/boss-auto-apply
+git clone https://github.com/Azusa010/boss-auto-apply.git .agents/skills/boss-auto-apply
 
 # 或者针对全局智能体（Global Skill，对所有项目生效）
-git clone https://github.com/<你的用户名>/boss-auto-apply.git ~/.gemini/config/skills/boss-auto-apply
+git clone https://github.com/Azusa010/boss-auto-apply.git ~/.gemini/config/skills/boss-auto-apply
 # （如使用 Claude / Cursor / Windsurf 等，放到对应 Agent 识别的 skills 目录下即可）
 ```
 
